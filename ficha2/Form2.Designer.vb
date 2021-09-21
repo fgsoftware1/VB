@@ -35,9 +35,9 @@ Partial Class Form2
         Me.lbl_rotulo.AutoSize = True
         Me.lbl_rotulo.Location = New System.Drawing.Point(13, 13)
         Me.lbl_rotulo.Name = "lbl_rotulo"
-        Me.lbl_rotulo.Size = New System.Drawing.Size(61, 13)
+        Me.lbl_rotulo.Size = New System.Drawing.Size(67, 13)
         Me.lbl_rotulo.TabIndex = 0
-        Me.lbl_rotulo.Text = "Apagr texto"
+        Me.lbl_rotulo.Text = "Apagar texto"
         '
         'txt_texto1
         '
