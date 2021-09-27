@@ -3,5 +3,7 @@
         Dim valor As Integer
 
         valor = InputBox("Introduza um valor inteiro", "Insira algo", 0)
+
+        txt_numero.Text = valor
     End Sub
 End Class
