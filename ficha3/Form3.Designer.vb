@@ -110,7 +110,7 @@ Partial Class Form3
         '
         'txt_potencia_num2
         '
-        Me.txt_potencia_num2.Location = New System.Drawing.Point(323, 110)
+        Me.txt_potencia_num2.Location = New System.Drawing.Point(342, 111)
         Me.txt_potencia_num2.Name = "txt_potencia_num2"
         Me.txt_potencia_num2.Size = New System.Drawing.Size(100, 20)
         Me.txt_potencia_num2.TabIndex = 8
@@ -191,7 +191,7 @@ Partial Class Form3
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(354, 42)
+        Me.Label6.Location = New System.Drawing.Point(369, 42)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(51, 13)
         Me.Label6.TabIndex = 18
