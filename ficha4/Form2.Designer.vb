@@ -26,13 +26,13 @@ Partial Class Form2
         Me.txt_preço = New System.Windows.Forms.TextBox()
         Me.txt_unidades = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.check_desconto5 = New System.Windows.Forms.CheckBox()
         Me.radio_taxa10 = New System.Windows.Forms.RadioButton()
         Me.radio_taxa15 = New System.Windows.Forms.RadioButton()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.btn_calcular = New System.Windows.Forms.Button()
+        Me.btn_limpar = New System.Windows.Forms.Button()
+        Me.lbl_resultado = New System.Windows.Forms.Label()
+        Me.txt_resultado = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'Label1
@@ -67,15 +67,15 @@ Partial Class Form2
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "quantas unidades"
         '
-        'CheckBox1
+        'check_desconto5
         '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(146, 127)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(81, 17)
-        Me.CheckBox1.TabIndex = 4
-        Me.CheckBox1.Text = "CheckBox1"
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.check_desconto5.AutoSize = True
+        Me.check_desconto5.Location = New System.Drawing.Point(146, 127)
+        Me.check_desconto5.Name = "check_desconto5"
+        Me.check_desconto5.Size = New System.Drawing.Size(87, 17)
+        Me.check_desconto5.TabIndex = 4
+        Me.check_desconto5.Text = "desconto 5%"
+        Me.check_desconto5.UseVisualStyleBackColor = True
         '
         'radio_taxa10
         '
@@ -99,52 +99,52 @@ Partial Class Form2
         Me.radio_taxa15.Text = "taxa 15%"
         Me.radio_taxa15.UseVisualStyleBackColor = True
         '
-        'Button1
+        'btn_calcular
         '
-        Me.Button1.Location = New System.Drawing.Point(50, 188)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 7
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btn_calcular.Location = New System.Drawing.Point(50, 188)
+        Me.btn_calcular.Name = "btn_calcular"
+        Me.btn_calcular.Size = New System.Drawing.Size(75, 32)
+        Me.btn_calcular.TabIndex = 7
+        Me.btn_calcular.Text = "calcular"
+        Me.btn_calcular.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btn_limpar
         '
-        Me.Button2.Location = New System.Drawing.Point(131, 188)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 8
-        Me.Button2.Text = "Button2"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btn_limpar.Location = New System.Drawing.Point(131, 188)
+        Me.btn_limpar.Name = "btn_limpar"
+        Me.btn_limpar.Size = New System.Drawing.Size(75, 32)
+        Me.btn_limpar.TabIndex = 8
+        Me.btn_limpar.Text = "limpar"
+        Me.btn_limpar.UseVisualStyleBackColor = True
         '
-        'Label3
+        'lbl_resultado
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(31, 247)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(39, 13)
-        Me.Label3.TabIndex = 9
-        Me.Label3.Text = "Label3"
+        Me.lbl_resultado.AutoSize = True
+        Me.lbl_resultado.Location = New System.Drawing.Point(31, 247)
+        Me.lbl_resultado.Name = "lbl_resultado"
+        Me.lbl_resultado.Size = New System.Drawing.Size(50, 13)
+        Me.lbl_resultado.TabIndex = 9
+        Me.lbl_resultado.Text = "resulatdo"
         '
-        'TextBox3
+        'txt_resultado
         '
-        Me.TextBox3.Location = New System.Drawing.Point(88, 247)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(118, 20)
-        Me.TextBox3.TabIndex = 10
+        Me.txt_resultado.Location = New System.Drawing.Point(88, 247)
+        Me.txt_resultado.Name = "txt_resultado"
+        Me.txt_resultado.Size = New System.Drawing.Size(118, 20)
+        Me.txt_resultado.TabIndex = 10
         '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(358, 315)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.txt_resultado)
+        Me.Controls.Add(Me.lbl_resultado)
+        Me.Controls.Add(Me.btn_limpar)
+        Me.Controls.Add(Me.btn_calcular)
         Me.Controls.Add(Me.radio_taxa15)
         Me.Controls.Add(Me.radio_taxa10)
-        Me.Controls.Add(Me.CheckBox1)
+        Me.Controls.Add(Me.check_desconto5)
         Me.Controls.Add(Me.txt_unidades)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.txt_preço)
@@ -160,11 +160,11 @@ Partial Class Form2
     Friend WithEvents txt_preço As TextBox
     Friend WithEvents txt_unidades As TextBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents check_desconto5 As CheckBox
     Friend WithEvents radio_taxa10 As RadioButton
     Friend WithEvents radio_taxa15 As RadioButton
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents btn_calcular As Button
+    Friend WithEvents btn_limpar As Button
+    Friend WithEvents lbl_resultado As Label
+    Friend WithEvents txt_resultado As TextBox
 End Class
