@@ -9,4 +9,8 @@
         radio_multiplicar.Checked = False
         radio_dividir.Checked = False
     End Sub
+
+    Private Sub btn_calcular_Click(sender As Object, e As EventArgs) Handles btn_calcular.Click
+
+    End Sub
 End Class
