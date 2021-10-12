@@ -24,7 +24,7 @@
         End If
 
         If check_desconto5.Checked = True Then
-            resultado = preco * quantidade * (1 + taxa) * (1 + 0.05) - desconto
+            resultado = preco * quantidade * (1 + taxa) * (1 + 0.05)
         Else
             resultado = preco * quantidade * (1 + taxa)
         End If
