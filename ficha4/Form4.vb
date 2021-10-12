@@ -33,5 +33,7 @@
         Else
             txt_periferico.Text = ""
         End If
+
+        txt_total.Text = Convert.ToString(base + monitor + periferico)
     End Sub
 End Class
