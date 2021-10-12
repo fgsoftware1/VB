@@ -34,6 +34,9 @@
             txt_periferico.Text = ""
         End If
 
+        monitor = Convert.ToInt32(txt_monitor.Text)
+        periferico = Convert.ToInt32(txt_periferico.Text)
+
         txt_total.Text = base + monitor + periferico
     End Sub
 End Class
