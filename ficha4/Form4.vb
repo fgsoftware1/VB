@@ -2,9 +2,9 @@
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         radio_lcd.Checked = False
         radio_4k.Checked = False
-        radio_impressora.Checked = False
-        radio_rato_razor.Checked = False
-        radio_ssd_500gb.Checked = False
+        check_impressora.Checked = False
+        check_rato_razor.Checked = False
+        check_ssd_500gb.Checked = False
         txt_base.Text = ""
         txt_monitor.Text = ""
         txt_periferico.Text = ""
@@ -24,16 +24,16 @@
             txt_monitor.Text = ""
         End If
 
-        If radio_impressora.Checked = True Then
+        If check_impressora.Checked = True Then
             txt_periferico.Text = 99
-        ElseIf radio_rato_razor.Checked = True Then
+        ElseIf check_rato_razor.Checked = True Then
             txt_periferico.Text = 15
-        ElseIf radio_ssd_500gb.Checked = True Then
+        ElseIf check_ssd_500gb.Checked = True Then
             txt_periferico.Text = 50
         Else
             txt_periferico.Text = ""
         End If
 
-        txt_total.Text = Convert.ToString(base + monitor + periferico)
+        txt_total.Text = base + monitor + periferico
     End Sub
 End Class

@@ -37,9 +37,9 @@ Partial Class btn_limpar
         Me.lbl_monitor = New System.Windows.Forms.Label()
         Me.btn_calcular = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.radio_impressora = New System.Windows.Forms.RadioButton()
-        Me.radio_rato_razor = New System.Windows.Forms.RadioButton()
-        Me.radio_ssd_500gb = New System.Windows.Forms.RadioButton()
+        Me.check_ssd_500gb = New System.Windows.Forms.CheckBox()
+        Me.check_rato_razor = New System.Windows.Forms.CheckBox()
+        Me.check_impressora = New System.Windows.Forms.CheckBox()
         Me.SuspendLayout()
         '
         'lbl_titulo
@@ -174,47 +174,41 @@ Partial Class btn_limpar
         Me.Button2.Text = "limpar"
         Me.Button2.UseVisualStyleBackColor = True
         '
-        'radio_impressora
+        'check_ssd_500gb
         '
-        Me.radio_impressora.AutoSize = True
-        Me.radio_impressora.Location = New System.Drawing.Point(77, 230)
-        Me.radio_impressora.Name = "radio_impressora"
-        Me.radio_impressora.Size = New System.Drawing.Size(96, 17)
-        Me.radio_impressora.TabIndex = 18
-        Me.radio_impressora.TabStop = True
-        Me.radio_impressora.Text = "impressora - 99"
-        Me.radio_impressora.UseVisualStyleBackColor = True
+        Me.check_ssd_500gb.AutoSize = True
+        Me.check_ssd_500gb.Location = New System.Drawing.Point(77, 276)
+        Me.check_ssd_500gb.Name = "check_ssd_500gb"
+        Me.check_ssd_500gb.Size = New System.Drawing.Size(108, 17)
+        Me.check_ssd_500gb.TabIndex = 7
+        Me.check_ssd_500gb.Text = "SSD 500GB  - 50"
+        Me.check_ssd_500gb.UseVisualStyleBackColor = True
         '
-        'radio_rato_razor
+        'check_rato_razor
         '
-        Me.radio_rato_razor.AutoSize = True
-        Me.radio_rato_razor.Location = New System.Drawing.Point(77, 253)
-        Me.radio_rato_razor.Name = "radio_rato_razor"
-        Me.radio_rato_razor.Size = New System.Drawing.Size(90, 17)
-        Me.radio_rato_razor.TabIndex = 19
-        Me.radio_rato_razor.TabStop = True
-        Me.radio_rato_razor.Text = "rato razor - 15"
-        Me.radio_rato_razor.UseVisualStyleBackColor = True
+        Me.check_rato_razor.AutoSize = True
+        Me.check_rato_razor.Location = New System.Drawing.Point(80, 253)
+        Me.check_rato_razor.Name = "check_rato_razor"
+        Me.check_rato_razor.Size = New System.Drawing.Size(91, 17)
+        Me.check_rato_razor.TabIndex = 6
+        Me.check_rato_razor.Text = "rato razor - 15"
+        Me.check_rato_razor.UseVisualStyleBackColor = True
         '
-        'radio_ssd_500gb
+        'check_impressora
         '
-        Me.radio_ssd_500gb.AutoSize = True
-        Me.radio_ssd_500gb.Location = New System.Drawing.Point(77, 276)
-        Me.radio_ssd_500gb.Name = "radio_ssd_500gb"
-        Me.radio_ssd_500gb.Size = New System.Drawing.Size(104, 17)
-        Me.radio_ssd_500gb.TabIndex = 20
-        Me.radio_ssd_500gb.TabStop = True
-        Me.radio_ssd_500gb.Text = "SSD 500GB - 50"
-        Me.radio_ssd_500gb.UseVisualStyleBackColor = True
+        Me.check_impressora.AutoSize = True
+        Me.check_impressora.Location = New System.Drawing.Point(80, 230)
+        Me.check_impressora.Name = "check_impressora"
+        Me.check_impressora.Size = New System.Drawing.Size(97, 17)
+        Me.check_impressora.TabIndex = 5
+        Me.check_impressora.Text = "impressora - 99"
+        Me.check_impressora.UseVisualStyleBackColor = True
         '
         'btn_limpar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(559, 415)
-        Me.Controls.Add(Me.radio_ssd_500gb)
-        Me.Controls.Add(Me.radio_rato_razor)
-        Me.Controls.Add(Me.radio_impressora)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.btn_calcular)
         Me.Controls.Add(Me.txt_monitor)
@@ -225,6 +219,9 @@ Partial Class btn_limpar
         Me.Controls.Add(Me.lbl_total)
         Me.Controls.Add(Me.txt_base)
         Me.Controls.Add(Me.lbl_preco)
+        Me.Controls.Add(Me.check_ssd_500gb)
+        Me.Controls.Add(Me.check_rato_razor)
+        Me.Controls.Add(Me.check_impressora)
         Me.Controls.Add(Me.radio_4k)
         Me.Controls.Add(Me.radio_lcd)
         Me.Controls.Add(Me.lbl_perifericos)
@@ -252,7 +249,7 @@ Partial Class btn_limpar
     Friend WithEvents lbl_monitor As Label
     Friend WithEvents btn_calcular As Button
     Friend WithEvents Button2 As Button
-    Friend WithEvents radio_impressora As RadioButton
-    Friend WithEvents radio_rato_razor As RadioButton
-    Friend WithEvents radio_ssd_500gb As RadioButton
+    Friend WithEvents check_ssd_500gb As CheckBox
+    Friend WithEvents check_rato_razor As CheckBox
+    Friend WithEvents check_impressora As CheckBox
 End Class
