@@ -43,7 +43,7 @@ Partial Class Form3
         'lbl_notas
         '
         Me.lbl_notas.AutoSize = True
-        Me.lbl_notas.Location = New System.Drawing.Point(82, 108)
+        Me.lbl_notas.Location = New System.Drawing.Point(47, 108)
         Me.lbl_notas.Name = "lbl_notas"
         Me.lbl_notas.Size = New System.Drawing.Size(74, 13)
         Me.lbl_notas.TabIndex = 1
@@ -51,26 +51,26 @@ Partial Class Form3
         '
         'txt_notas
         '
-        Me.txt_notas.Location = New System.Drawing.Point(171, 108)
+        Me.txt_notas.Location = New System.Drawing.Point(140, 108)
         Me.txt_notas.Name = "txt_notas"
-        Me.txt_notas.Size = New System.Drawing.Size(100, 20)
+        Me.txt_notas.Size = New System.Drawing.Size(134, 20)
         Me.txt_notas.TabIndex = 2
         '
         'txt_resultado
         '
-        Me.txt_resultado.Location = New System.Drawing.Point(171, 192)
+        Me.txt_resultado.Location = New System.Drawing.Point(140, 192)
         Me.txt_resultado.Name = "txt_resultado"
-        Me.txt_resultado.Size = New System.Drawing.Size(100, 20)
+        Me.txt_resultado.Size = New System.Drawing.Size(134, 20)
         Me.txt_resultado.TabIndex = 4
         '
         'lbl_resultado
         '
         Me.lbl_resultado.AutoSize = True
-        Me.lbl_resultado.Location = New System.Drawing.Point(82, 192)
+        Me.lbl_resultado.Location = New System.Drawing.Point(71, 192)
         Me.lbl_resultado.Name = "lbl_resultado"
-        Me.lbl_resultado.Size = New System.Drawing.Size(39, 13)
+        Me.lbl_resultado.Size = New System.Drawing.Size(50, 13)
         Me.lbl_resultado.TabIndex = 3
-        Me.lbl_resultado.Text = "Label2"
+        Me.lbl_resultado.Text = "resultado"
         '
         'btn_converter
         '
