@@ -27,7 +27,7 @@ Partial Class btn_calcular
         Me.Button1 = New System.Windows.Forms.Button()
         Me.lbl_soma = New System.Windows.Forms.Label()
         Me.txt_soma = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.txt_media = New System.Windows.Forms.TextBox()
         Me.lbl_media = New System.Windows.Forms.Label()
         Me.txt_maximo = New System.Windows.Forms.TextBox()
         Me.lbl_maximo = New System.Windows.Forms.Label()
@@ -80,12 +80,12 @@ Partial Class btn_calcular
         Me.txt_soma.Size = New System.Drawing.Size(199, 20)
         Me.txt_soma.TabIndex = 4
         '
-        'TextBox2
+        'txt_media
         '
-        Me.TextBox2.Location = New System.Drawing.Point(260, 141)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(199, 20)
-        Me.TextBox2.TabIndex = 6
+        Me.txt_media.Location = New System.Drawing.Point(260, 141)
+        Me.txt_media.Name = "txt_media"
+        Me.txt_media.Size = New System.Drawing.Size(199, 20)
+        Me.txt_media.TabIndex = 6
         '
         'lbl_media
         '
@@ -167,7 +167,7 @@ Partial Class btn_calcular
         Me.Controls.Add(Me.lbl_minimo)
         Me.Controls.Add(Me.txt_maximo)
         Me.Controls.Add(Me.lbl_maximo)
-        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.txt_media)
         Me.Controls.Add(Me.lbl_media)
         Me.Controls.Add(Me.txt_soma)
         Me.Controls.Add(Me.lbl_soma)
@@ -186,7 +186,7 @@ Partial Class btn_calcular
     Friend WithEvents Button1 As Button
     Friend WithEvents lbl_soma As Label
     Friend WithEvents txt_soma As TextBox
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents txt_media As TextBox
     Friend WithEvents lbl_media As Label
     Friend WithEvents txt_maximo As TextBox
     Friend WithEvents lbl_maximo As Label
