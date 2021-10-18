@@ -9,4 +9,8 @@
 Erro1:
         MsgBox("saida do procedimento por causa de um erro!" & vbNewLine & Err.Description)
     End Sub
+
+    Private Sub num_n1_ValueChanged(sender As Object, e As EventArgs) Handles num_n1.ValueChanged
+
+    End Sub
 End Class
