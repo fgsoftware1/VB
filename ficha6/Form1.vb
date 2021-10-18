@@ -34,6 +34,11 @@
         Next
 
         txt_soma.Text = soma
-        txt_soma.Text = soma / dados.Count
+        txt_media.Text = soma / dados.Count
+
+        For i = 0 To 3
+            If dados(i) maximo Then maximo = dados(i)
+            If dados(i) minimo Then maximo = dados(i)
+        Next
     End Sub
 End Class
