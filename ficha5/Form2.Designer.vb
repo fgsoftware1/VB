@@ -28,6 +28,8 @@ Partial Class Form2
         Me.num_n1 = New System.Windows.Forms.NumericUpDown()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.lbl_titulo = New System.Windows.Forms.Label()
+        Me.txt_resultado = New System.Windows.Forms.TextBox()
+        Me.lbl_resultado = New System.Windows.Forms.Label()
         CType(Me.num_n2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.num_n1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -82,11 +84,29 @@ Partial Class Form2
         Me.lbl_titulo.TabIndex = 6
         Me.lbl_titulo.Text = "exemplo de um procedimento com  um instruçao ""on error ... goto ..."""
         '
+        'txt_resultado
+        '
+        Me.txt_resultado.Location = New System.Drawing.Point(168, 243)
+        Me.txt_resultado.Name = "txt_resultado"
+        Me.txt_resultado.Size = New System.Drawing.Size(120, 20)
+        Me.txt_resultado.TabIndex = 13
+        '
+        'lbl_resultado
+        '
+        Me.lbl_resultado.AutoSize = True
+        Me.lbl_resultado.Location = New System.Drawing.Point(100, 243)
+        Me.lbl_resultado.Name = "lbl_resultado"
+        Me.lbl_resultado.Size = New System.Drawing.Size(50, 13)
+        Me.lbl_resultado.TabIndex = 12
+        Me.lbl_resultado.Text = "resultado"
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(409, 300)
+        Me.Controls.Add(Me.txt_resultado)
+        Me.Controls.Add(Me.lbl_resultado)
         Me.Controls.Add(Me.btn_calcular)
         Me.Controls.Add(Me.num_n2)
         Me.Controls.Add(Me.lbl_n2)
@@ -108,4 +128,6 @@ Partial Class Form2
     Friend WithEvents num_n1 As NumericUpDown
     Friend WithEvents Label1 As Label
     Friend WithEvents lbl_titulo As Label
+    Friend WithEvents txt_resultado As TextBox
+    Friend WithEvents lbl_resultado As Label
 End Class

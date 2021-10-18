@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form1
     Inherits System.Windows.Forms.Form
 
     'Descartar substituições de formulário para limpar a lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Form1
     'OBSERVAÇÃO: o procedimento a seguir é exigido pelo Windows Form Designer
     'Pode ser modificado usando o Windows Form Designer.  
     'Não o modifique usando o editor de códigos.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.lbl_titulo = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -28,8 +28,6 @@ Partial Class Form1
         Me.num_n2 = New System.Windows.Forms.NumericUpDown()
         Me.lbl_n2 = New System.Windows.Forms.Label()
         Me.btn_calcular = New System.Windows.Forms.Button()
-        Me.lbl_resultado = New System.Windows.Forms.Label()
-        Me.txt_resultado = New System.Windows.Forms.TextBox()
         CType(Me.num_n1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.num_n2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -84,29 +82,11 @@ Partial Class Form1
         Me.btn_calcular.Text = "calcular"
         Me.btn_calcular.UseVisualStyleBackColor = True
         '
-        'lbl_resultado
-        '
-        Me.lbl_resultado.AutoSize = True
-        Me.lbl_resultado.Location = New System.Drawing.Point(134, 233)
-        Me.lbl_resultado.Name = "lbl_resultado"
-        Me.lbl_resultado.Size = New System.Drawing.Size(50, 13)
-        Me.lbl_resultado.TabIndex = 6
-        Me.lbl_resultado.Text = "resultado"
-        '
-        'txt_resultado
-        '
-        Me.txt_resultado.Location = New System.Drawing.Point(202, 233)
-        Me.txt_resultado.Name = "txt_resultado"
-        Me.txt_resultado.Size = New System.Drawing.Size(120, 20)
-        Me.txt_resultado.TabIndex = 7
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(429, 290)
-        Me.Controls.Add(Me.txt_resultado)
-        Me.Controls.Add(Me.lbl_resultado)
         Me.Controls.Add(Me.btn_calcular)
         Me.Controls.Add(Me.num_n2)
         Me.Controls.Add(Me.lbl_n2)
@@ -128,6 +108,4 @@ Partial Class Form1
     Friend WithEvents num_n2 As NumericUpDown
     Friend WithEvents lbl_n2 As Label
     Friend WithEvents btn_calcular As Button
-    Friend WithEvents lbl_resultado As Label
-    Friend WithEvents txt_resultado As TextBox
 End Class
