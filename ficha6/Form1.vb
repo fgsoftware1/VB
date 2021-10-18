@@ -26,11 +26,14 @@
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim soma As Integer
-        Dim maximo As Integer
-        Dim minimo As Integer
+        Dim maximo As Integer = dados(0)
+        Dim minimo As Integer = dados(0)
 
         For i = 0 To 3
             soma = soma + dados(3)
         Next
+
+        txt_soma.Text = soma
+        txt_soma.Text = soma / dados.Count
     End Sub
 End Class
