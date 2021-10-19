@@ -9,7 +9,11 @@
 
         valor = Val(InputBox("Quantos dados pretende inserir?", "quantidade"))
 
+        ReDim dados(0 To valor)
+
         For i = 0 To valor
+            Dim numero As Integer = 0
+
             valor = Convert.ToInt32(InputBox("Introduza os valores"))
 
             dados(i) = valor
