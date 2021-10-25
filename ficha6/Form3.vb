@@ -24,4 +24,15 @@
         txt_posicao.Text = index + 1
         txt_item.Text = ListBox1.Items.Item(index)
     End Sub
+
+    Private Sub btn_alterar_Click(sender As Object, e As EventArgs) Handles btn_alterar.Click
+        Dim valor As String
+        Dim index As Integer
+
+        index = ListBox1.SelectedIndex
+        valor = InputBox("novo valor: ", "Alteraçao valor")
+
+        ListBox1.Items(index) = valor
+        txt_item.Text = valor
+    End Sub
 End Class
