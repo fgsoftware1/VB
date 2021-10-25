@@ -23,9 +23,9 @@ Partial Class form4_novo
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.txt_num1 = New System.Windows.Forms.Label()
+        Me.lbl_num1 = New System.Windows.Forms.Label()
         Me.lbl_num2 = New System.Windows.Forms.Label()
-        Me.txt_num = New System.Windows.Forms.TextBox()
+        Me.txt_num1 = New System.Windows.Forms.TextBox()
         Me.txt_num2 = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
@@ -38,14 +38,14 @@ Partial Class form4_novo
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "invocou outro formulario"
         '
-        'txt_num1
+        'lbl_num1
         '
-        Me.txt_num1.AutoSize = True
-        Me.txt_num1.Location = New System.Drawing.Point(78, 64)
-        Me.txt_num1.Name = "txt_num1"
-        Me.txt_num1.Size = New System.Drawing.Size(52, 13)
-        Me.txt_num1.TabIndex = 1
-        Me.txt_num1.Text = "1ºnumero"
+        Me.lbl_num1.AutoSize = True
+        Me.lbl_num1.Location = New System.Drawing.Point(78, 64)
+        Me.lbl_num1.Name = "lbl_num1"
+        Me.lbl_num1.Size = New System.Drawing.Size(52, 13)
+        Me.lbl_num1.TabIndex = 1
+        Me.lbl_num1.Text = "1ºnumero"
         '
         'lbl_num2
         '
@@ -56,12 +56,12 @@ Partial Class form4_novo
         Me.lbl_num2.TabIndex = 2
         Me.lbl_num2.Text = "2ºnumero"
         '
-        'txt_num
+        'txt_num1
         '
-        Me.txt_num.Location = New System.Drawing.Point(141, 64)
-        Me.txt_num.Name = "txt_num"
-        Me.txt_num.Size = New System.Drawing.Size(100, 20)
-        Me.txt_num.TabIndex = 3
+        Me.txt_num1.Location = New System.Drawing.Point(141, 64)
+        Me.txt_num1.Name = "txt_num1"
+        Me.txt_num1.Size = New System.Drawing.Size(100, 20)
+        Me.txt_num1.TabIndex = 3
         '
         'txt_num2
         '
@@ -76,9 +76,9 @@ Partial Class form4_novo
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(382, 249)
         Me.Controls.Add(Me.txt_num2)
-        Me.Controls.Add(Me.txt_num)
-        Me.Controls.Add(Me.lbl_num2)
         Me.Controls.Add(Me.txt_num1)
+        Me.Controls.Add(Me.lbl_num2)
+        Me.Controls.Add(Me.lbl_num1)
         Me.Controls.Add(Me.Label1)
         Me.Name = "form4_novo"
         Me.Text = "form1_novo"
@@ -88,8 +88,8 @@ Partial Class form4_novo
     End Sub
 
     Friend WithEvents Label1 As Label
-    Friend WithEvents txt_num1 As Label
+    Friend WithEvents lbl_num1 As Label
     Friend WithEvents lbl_num2 As Label
-    Friend WithEvents txt_num As TextBox
+    Friend WithEvents txt_num1 As TextBox
     Friend WithEvents txt_num2 As TextBox
 End Class
