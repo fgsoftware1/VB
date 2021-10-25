@@ -35,4 +35,15 @@
         ListBox1.Items(index) = valor
         txt_item.Text = valor
     End Sub
+
+    Private Sub btn_eliminar_Click(sender As Object, e As EventArgs) Handles btn_eliminar.Click
+        Dim index As String
+
+        index = ListBox1.SelectedIndex
+
+        ListBox1.Items.RemoveAt(index)
+        txt_indice.Text = ""
+        txt_posicao.Text = ""
+        txt_item.Text = ""
+    End Sub
 End Class
