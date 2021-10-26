@@ -156,6 +156,7 @@ Partial Class Inserir_aluno
         Me.pic_imagem.Location = New System.Drawing.Point(551, 94)
         Me.pic_imagem.Name = "pic_imagem"
         Me.pic_imagem.Size = New System.Drawing.Size(140, 119)
+        Me.pic_imagem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pic_imagem.TabIndex = 13
         Me.pic_imagem.TabStop = False
         '
