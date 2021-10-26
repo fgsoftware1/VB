@@ -13,7 +13,9 @@
             Exit Sub
         End If
 
-        Dim ativo = IIf(cmb_ativo.Text = vbSimplifiedChinese, 1, 0)
+        Dim ativo = IIf(cmb_ativo.Text = "Sim", 1, 0)
+        Dim nome_ficheiro = System.IO.Path.GetFileName(imageFilename)
+        Dim extensao_ficheiro = System.IO.Path.GetExtension
     End Sub
 
     Private Sub pic_imagem_Click(sender As Object, e As EventArgs) Handles pic_imagem.Click
