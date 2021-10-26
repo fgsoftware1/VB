@@ -1,5 +1,6 @@
 ﻿Public Class Inserir_aluno
     Dim imageUpload As Image
+    Dim imageFilename As String
 
     Private Sub btn_inserir_Click(sender As Object, e As EventArgs) Handles btn_inserir.Click
 
@@ -15,6 +16,9 @@
 
             If .ShowDialog = DialogResult.OK Then
                 pic_imagem.Image = Image.FromFile(.FileName)
+
+                imageFilename = openFileDialog1.FileName
+                imageUpload = Image.FromFile(openFileDialog1.FileName)
             End If
         End With
     End Sub
