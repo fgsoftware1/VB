@@ -7,7 +7,7 @@
     End Sub
 
     Private Sub pic_imagem_Click(sender As Object, e As EventArgs) Handles pic_imagem.Click
-        Dim openFileDialog1 As OpenFileDialog
+        Dim openFileDialog1 As New OpenFileDialog
 
         With openFileDialog1
             .CheckFileExists = True
