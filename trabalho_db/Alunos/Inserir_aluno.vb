@@ -3,7 +3,10 @@
     Dim imageFilename As String
 
     Private Sub btn_inserir_Click(sender As Object, e As EventArgs) Handles btn_inserir.Click
-
+        If Validacoes_BD.Valida_Numeros(txt_contato.Text, "Contato") = -1 Then
+            txt_contato.Text = ""
+            Exit Sub
+        End If
     End Sub
 
     Private Sub pic_imagem_Click(sender As Object, e As EventArgs) Handles pic_imagem.Click
