@@ -6,4 +6,8 @@
     Private Sub btn_inserir_Click(sender As Object, e As EventArgs) Handles btn_inserir.Click
 
     End Sub
+
+    Private Sub pic_imagem_Click(sender As Object, e As EventArgs) Handles pic_imagem.Click
+
+    End Sub
 End Class
