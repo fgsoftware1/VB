@@ -4,7 +4,7 @@ Module Module_BD
     Public myConnectionString As New MySqlConnection("server=localhost; uid=root; " &
                                                      "pwd=; database=trabalho_bd; SslMode=none")
 
-    Function Executar_Sql_DataGridView(comando As String) As MySqlDataAdapter
+    Public Function Executar_Sql_DataGridView(comando As String) As MySqlDataAdapter
         If (myConnectionString.State = ConnectionState.Closed) Then
             myConnectionString.Open()
         End If
@@ -20,7 +20,7 @@ Module Module_BD
         End Try
     End Function
 
-    Function Executar_Sql_Command(comando As String) As MySqlDataReader
+    Public Function Executar_Sql_Command(comando As String) As MySqlDataReader
         myConnectionString.Open()
 
         Try
