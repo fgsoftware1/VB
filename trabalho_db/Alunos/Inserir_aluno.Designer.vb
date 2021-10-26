@@ -25,12 +25,12 @@ Partial Class Inserir_aluno
         Me.lbl_title = New System.Windows.Forms.Label()
         Me.lbl_nome = New System.Windows.Forms.Label()
         Me.txt_nome = New System.Windows.Forms.TextBox()
-        Me.txt_genero = New System.Windows.Forms.ComboBox()
+        Me.cmb_genero = New System.Windows.Forms.ComboBox()
         Me.lbl_morada = New System.Windows.Forms.Label()
         Me.txt_morada = New System.Windows.Forms.TextBox()
         Me.txt_data = New System.Windows.Forms.TextBox()
         Me.lbl_genero = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.cmb_ativo = New System.Windows.Forms.ComboBox()
         Me.lbl_ativo = New System.Windows.Forms.Label()
         Me.txt_contato = New System.Windows.Forms.TextBox()
         Me.lbl_data = New System.Windows.Forms.Label()
@@ -67,14 +67,14 @@ Partial Class Inserir_aluno
         Me.txt_nome.Size = New System.Drawing.Size(362, 20)
         Me.txt_nome.TabIndex = 2
         '
-        'txt_genero
+        'cmb_genero
         '
-        Me.txt_genero.FormattingEnabled = True
-        Me.txt_genero.Items.AddRange(New Object() {"masculino", "feminino"})
-        Me.txt_genero.Location = New System.Drawing.Point(375, 156)
-        Me.txt_genero.Name = "txt_genero"
-        Me.txt_genero.Size = New System.Drawing.Size(121, 21)
-        Me.txt_genero.TabIndex = 3
+        Me.cmb_genero.FormattingEnabled = True
+        Me.cmb_genero.Items.AddRange(New Object() {"masculino", "feminino"})
+        Me.cmb_genero.Location = New System.Drawing.Point(375, 156)
+        Me.cmb_genero.Name = "cmb_genero"
+        Me.cmb_genero.Size = New System.Drawing.Size(121, 21)
+        Me.cmb_genero.TabIndex = 3
         '
         'lbl_morada
         '
@@ -108,14 +108,14 @@ Partial Class Inserir_aluno
         Me.lbl_genero.TabIndex = 7
         Me.lbl_genero.Text = "genero"
         '
-        'ComboBox1
+        'cmb_ativo
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"sim", "nao"})
-        Me.ComboBox1.Location = New System.Drawing.Point(375, 192)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox1.TabIndex = 8
+        Me.cmb_ativo.FormattingEnabled = True
+        Me.cmb_ativo.Items.AddRange(New Object() {"sim", "nao"})
+        Me.cmb_ativo.Location = New System.Drawing.Point(375, 192)
+        Me.cmb_ativo.Name = "cmb_ativo"
+        Me.cmb_ativo.Size = New System.Drawing.Size(121, 21)
+        Me.cmb_ativo.TabIndex = 8
         '
         'lbl_ativo
         '
@@ -200,12 +200,12 @@ Partial Class Inserir_aluno
         Me.Controls.Add(Me.lbl_data)
         Me.Controls.Add(Me.txt_contato)
         Me.Controls.Add(Me.lbl_ativo)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.cmb_ativo)
         Me.Controls.Add(Me.lbl_genero)
         Me.Controls.Add(Me.txt_data)
         Me.Controls.Add(Me.txt_morada)
         Me.Controls.Add(Me.lbl_morada)
-        Me.Controls.Add(Me.txt_genero)
+        Me.Controls.Add(Me.cmb_genero)
         Me.Controls.Add(Me.txt_nome)
         Me.Controls.Add(Me.lbl_nome)
         Me.Controls.Add(Me.lbl_title)
@@ -220,12 +220,12 @@ Partial Class Inserir_aluno
     Friend WithEvents lbl_title As Label
     Friend WithEvents lbl_nome As Label
     Friend WithEvents txt_nome As TextBox
-    Friend WithEvents txt_genero As ComboBox
+    Friend WithEvents cmb_genero As ComboBox
     Friend WithEvents lbl_morada As Label
     Friend WithEvents txt_morada As TextBox
     Friend WithEvents txt_data As TextBox
     Friend WithEvents lbl_genero As Label
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents cmb_ativo As ComboBox
     Friend WithEvents lbl_ativo As Label
     Friend WithEvents txt_contato As TextBox
     Friend WithEvents lbl_data As Label

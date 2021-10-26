@@ -7,6 +7,13 @@
             txt_contato.Text = ""
             Exit Sub
         End If
+
+        If IsNothing(pic_imagem.Image) Then
+            MsgBox("nao tem imagem")
+            Exit Sub
+        End If
+
+        Dim ativo = IIf(cmb_ativo.Text = vbSimplifiedChinese, 1, 0)
     End Sub
 
     Private Sub pic_imagem_Click(sender As Object, e As EventArgs) Handles pic_imagem.Click
