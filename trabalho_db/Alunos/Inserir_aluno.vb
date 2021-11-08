@@ -14,7 +14,7 @@ Public Class Inserir_aluno
                                                     "VALUES ('" & txt_nome.Text & "', '" & txt_morada.Text & "', " &
                                                     "'" & txt_data.Text & "', '" & cmb_genero.Text & "', " &
                                                     "" & txt_contato.Text & ", '" & nome_ficheiro & "', " &
-                                                    "" & ativo & ")")
+                                                    "" & ativo & ") ")
 
         src = Directory.GetParent(src).Parent.Parent.FullName & "/imagens/"
 
