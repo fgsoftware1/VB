@@ -21,8 +21,8 @@ Public Class Listar_Dados
         valor = DataGridView1.CurrentRow.Index
 
         txt_id.Text = DataGridView1.Item("ID_Aluno", valor).Value
-        txt_nome = DataGridView1.Item("Nome", valor).Value
-        txt_morada = DataGridView1.Item("Morada", valor).Value
+        txt_nome.Text = DataGridView1.Item("Nome", valor).Value
+        txt_morada.Text = DataGridView1.Item("Morada", valor).Value
         pic_imagem.ImageLocation = src & DataGridView1.Item("Imagem", valor).Value
     End Sub
 End Class
