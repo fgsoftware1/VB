@@ -117,6 +117,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Alunos\imagens\Listar_Dados.Designer.vb">
+      <DependentUpon>Listar_Dados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Alunos\imagens\Listar_Dados.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Alunos\Inserir_aluno.Designer.vb">
       <DependentUpon>Inserir_aluno.vb</DependentUpon>
     </Compile>
@@ -150,6 +156,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Alunos\imagens\Listar_Dados.resx">
+      <DependentUpon>Listar_Dados.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Alunos\Inserir_aluno.resx">
       <DependentUpon>Inserir_aluno.vb</DependentUpon>
     </EmbeddedResource>
@@ -176,8 +185,6 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Alunos\imagens\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
