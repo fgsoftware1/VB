@@ -56,7 +56,7 @@ Partial Class Listar_Dados
         '
         Me.txt_id.Location = New System.Drawing.Point(116, 301)
         Me.txt_id.Name = "txt_id"
-        Me.txt_id.Size = New System.Drawing.Size(387, 20)
+        Me.txt_id.Size = New System.Drawing.Size(55, 20)
         Me.txt_id.TabIndex = 2
         '
         'txt_nome
