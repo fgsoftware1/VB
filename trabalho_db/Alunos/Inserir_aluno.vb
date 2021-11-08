@@ -5,19 +5,6 @@ Public Class Inserir_aluno
     Dim imageFilename As String
 
     Private Sub btn_inserir_Click(sender As Object, e As EventArgs) Handles btn_inserir.Click
-        Dim ativo = IIf(cmb_ativo.Text = "Sim", 1, 0)
-        Dim nome_ficheiro = System.IO.Path.GetFileName(imageFilename)
-        Dim extensao_ficheiro = System.IO.Path.GetExtension(imageFilename)
-        Dim src = AppDomain.CurrentDomain.BaseDirectory
-        Dim result = Module_BD.Executar_Sql_Command("INSERT INTO " &
-                                                    "alunos (Nome, Morada, Data_Nasc, Genero, Contato, Imagem, Ativo " &
-                                                    "VALUES ('" & txt_nome.Text & "', '" & txt_morada.Text & "', " &
-                                                    "'" & txt_data.Text & "', '" & cmb_genero.Text & "', " &
-                                                    "" & txt_contato.Text & ", '" & nome_ficheiro & "', " &
-                                                    "" & ativo & ") ")
-
-        src = Directory.GetParent(src).Parent.Parent.FullName & "/imagens/"
-
         If Validacoes_BD.Valida_Numeros(txt_contato.Text, "Contato") = -1 Then
             txt_contato.Text = ""
             Exit Sub
@@ -28,6 +15,13 @@ Public Class Inserir_aluno
             Exit Sub
         End If
 
+        Dim ativo = IIf(cmb_ativo.Text = "Sim", 1, 0)
+        Dim nome_ficheiro = System.IO.Path.GetFileName(imageFilename)
+        Dim extensao_ficheiro = System.IO.Path.GetExtension(imageFilename)
+        Dim src = AppDomain.CurrentDomain.BaseDirectory
+
+        src = Directory.GetParent(src).Parent.Parent.FullName & "\imagens\"
+
         If File.Exists(src & nome_ficheiro) Then
             MsgBox("já existe a imagem")
             pic_imagem.Image = Nothing
@@ -37,6 +31,12 @@ Public Class Inserir_aluno
         End If
 
         Try
+            Dim result = Module_BD.Executar_Sql_Command("INSERT INTO " &
+                                                    "alunos (Nome, Morada, Data_Nasc, Genero, Contato, Imagem, Ativo) " &
+                                                    "VALUES ('" & txt_nome.Text & "', '" & txt_morada.Text & "', " &
+                                                    "'" & txt_data.Text & "', '" & cmb_genero.Text & "', " &
+                                                    "" & txt_contato.Text & ", '" & nome_ficheiro & "', " &
+                                                    "" & ativo & ") ")
             If IsNothing(result) Then
                 File.Delete(src & nome_ficheiro)
                 MsgBox("Erro na inserçao dos dados")
