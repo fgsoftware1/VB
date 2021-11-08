@@ -10,13 +10,13 @@ Public Class Inserir_aluno
         Dim extensao_ficheiro = System.IO.Path.GetExtension(imageFilename)
         Dim src = AppDomain.CurrentDomain.BaseDirectory
         Dim result = Module_BD.Executar_Sql_Command("INSERT INTO " &
-                                                    "alunos (Nome, Morada, Data_Nasc, Genero, Contato, Imagem, Ativo" &
+                                                    "alunos (Nome, Morada, Data_Nasc, Genero, Contato, Imagem, Ativo " &
                                                     "VALUES ('" & txt_nome.Text & "', '" & txt_morada.Text & "', " &
                                                     "'" & txt_data.Text & "', '" & cmb_genero.Text & "', " &
                                                     "" & txt_contato.Text & ", '" & nome_ficheiro & "', " &
                                                     "" & ativo & ")")
 
-        src = Directory.GetParent(src).Parent.Parent.FullName & "/imagens"
+        src = Directory.GetParent(src).Parent.Parent.FullName & "/imagens/"
 
         If Validacoes_BD.Valida_Numeros(txt_contato.Text, "Contato") = -1 Then
             txt_contato.Text = ""
@@ -40,6 +40,8 @@ Public Class Inserir_aluno
             If IsNothing(result) Then
                 File.Delete(src & nome_ficheiro)
                 MsgBox("Erro na inserçao dos dados")
+            ElseIf result.RecordsAffected = 1 Then
+                MsgBox("dados inseridos")
             End If
         Catch ex As MySql.Data.MySqlClient.MySqlException
             MessageBox.Show(ex.Message)
