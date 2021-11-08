@@ -23,12 +23,12 @@ Partial Class Listar_Dados
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
+        Me.lbl_id = New System.Windows.Forms.Label()
+        Me.txt_id = New System.Windows.Forms.TextBox()
+        Me.txt_nome = New System.Windows.Forms.TextBox()
+        Me.lbl_nome = New System.Windows.Forms.Label()
+        Me.txt_morada = New System.Windows.Forms.TextBox()
+        Me.lbl_morada = New System.Windows.Forms.Label()
         Me.btn_carregar = New System.Windows.Forms.Button()
         Me.pic_imagem = New System.Windows.Forms.PictureBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -43,53 +43,53 @@ Partial Class Listar_Dados
         Me.DataGridView1.Size = New System.Drawing.Size(678, 245)
         Me.DataGridView1.TabIndex = 0
         '
-        'Label1
+        'lbl_id
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(55, 304)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(39, 13)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Label1"
+        Me.lbl_id.AutoSize = True
+        Me.lbl_id.Location = New System.Drawing.Point(55, 304)
+        Me.lbl_id.Name = "lbl_id"
+        Me.lbl_id.Size = New System.Drawing.Size(18, 13)
+        Me.lbl_id.TabIndex = 1
+        Me.lbl_id.Text = "ID"
         '
-        'TextBox1
+        'txt_id
         '
-        Me.TextBox1.Location = New System.Drawing.Point(116, 301)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox1.TabIndex = 2
+        Me.txt_id.Location = New System.Drawing.Point(116, 301)
+        Me.txt_id.Name = "txt_id"
+        Me.txt_id.Size = New System.Drawing.Size(387, 20)
+        Me.txt_id.TabIndex = 2
         '
-        'TextBox2
+        'txt_nome
         '
-        Me.TextBox2.Location = New System.Drawing.Point(116, 338)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox2.TabIndex = 4
+        Me.txt_nome.Location = New System.Drawing.Point(116, 338)
+        Me.txt_nome.Name = "txt_nome"
+        Me.txt_nome.Size = New System.Drawing.Size(387, 20)
+        Me.txt_nome.TabIndex = 4
         '
-        'Label2
+        'lbl_nome
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(55, 338)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(39, 13)
-        Me.Label2.TabIndex = 3
-        Me.Label2.Text = "Label2"
+        Me.lbl_nome.AutoSize = True
+        Me.lbl_nome.Location = New System.Drawing.Point(55, 338)
+        Me.lbl_nome.Name = "lbl_nome"
+        Me.lbl_nome.Size = New System.Drawing.Size(33, 13)
+        Me.lbl_nome.TabIndex = 3
+        Me.lbl_nome.Text = "nome"
         '
-        'TextBox3
+        'txt_morada
         '
-        Me.TextBox3.Location = New System.Drawing.Point(116, 380)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox3.TabIndex = 6
+        Me.txt_morada.Location = New System.Drawing.Point(116, 380)
+        Me.txt_morada.Name = "txt_morada"
+        Me.txt_morada.Size = New System.Drawing.Size(387, 20)
+        Me.txt_morada.TabIndex = 6
         '
-        'Label3
+        'lbl_morada
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(55, 380)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(39, 13)
-        Me.Label3.TabIndex = 5
-        Me.Label3.Text = "Label3"
+        Me.lbl_morada.AutoSize = True
+        Me.lbl_morada.Location = New System.Drawing.Point(55, 380)
+        Me.lbl_morada.Name = "lbl_morada"
+        Me.lbl_morada.Size = New System.Drawing.Size(42, 13)
+        Me.lbl_morada.TabIndex = 5
+        Me.lbl_morada.Text = "morada"
         '
         'btn_carregar
         '
@@ -102,9 +102,9 @@ Partial Class Listar_Dados
         '
         'pic_imagem
         '
-        Me.pic_imagem.Location = New System.Drawing.Point(538, 315)
+        Me.pic_imagem.Location = New System.Drawing.Point(538, 301)
         Me.pic_imagem.Name = "pic_imagem"
-        Me.pic_imagem.Size = New System.Drawing.Size(152, 123)
+        Me.pic_imagem.Size = New System.Drawing.Size(152, 137)
         Me.pic_imagem.TabIndex = 8
         Me.pic_imagem.TabStop = False
         '
@@ -115,12 +115,12 @@ Partial Class Listar_Dados
         Me.ClientSize = New System.Drawing.Size(702, 450)
         Me.Controls.Add(Me.pic_imagem)
         Me.Controls.Add(Me.btn_carregar)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.txt_morada)
+        Me.Controls.Add(Me.lbl_morada)
+        Me.Controls.Add(Me.txt_nome)
+        Me.Controls.Add(Me.lbl_nome)
+        Me.Controls.Add(Me.txt_id)
+        Me.Controls.Add(Me.lbl_id)
         Me.Controls.Add(Me.DataGridView1)
         Me.Name = "Listar_Dados"
         Me.Text = "Listar_Dados"
@@ -132,12 +132,12 @@ Partial Class Listar_Dados
     End Sub
 
     Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents Label1 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents Label3 As Label
+    Friend WithEvents lbl_id As Label
+    Friend WithEvents txt_id As TextBox
+    Friend WithEvents txt_nome As TextBox
+    Friend WithEvents lbl_nome As Label
+    Friend WithEvents txt_morada As TextBox
+    Friend WithEvents lbl_morada As Label
     Friend WithEvents btn_carregar As Button
     Friend WithEvents pic_imagem As PictureBox
 End Class
