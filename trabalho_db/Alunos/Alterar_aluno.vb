@@ -15,7 +15,13 @@ Public Class Alterar_aluno
                 txt_morada.Text = result("Morada").ToString()
                 txt_data.Text = result("Data_Nasc").ToString()
                 cmb_genero.SelectedItem = result("Genero").ToString
-                cmb_ativo.SelectedItem = result("Ativo").ToString
+                txt_contato.Text = result("Contato").ToString()
+                cmb_ativo.SelectedItem = IIf(result("Ativo") = 1, "Sim", "Nao")
+                pic_imagem.ImageLocation = src & result("Imagem").ToString
+
+                result.Close()
+            Else
+                MsgBox("Ocorreu um erro na consulta à BD", vbCritical, "Erro consulta")
             End If
         Catch ex As Exception
             MsgBox(ex.Message)
