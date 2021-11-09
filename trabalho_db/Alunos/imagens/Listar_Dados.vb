@@ -30,4 +30,28 @@ Public Class Listar_Dados
         Inserir_aluno.Show()
         'Me.Hide()
     End Sub
+
+    Private Sub btn_alterar_Click(sender As Object, e As EventArgs) Handles btn_alterar.Click
+        If txt_id.Text <> "" Then
+            Module_BD.ID = txt_id.Text
+
+        End If
+    End Sub
+
+    Private Sub btn_eliminar_Click(sender As Object, e As EventArgs) Handles btn_eliminar.Click
+        Dim valor = MsgBox("Deseja eliminar o regista da BD?", vbExclamation + vbYesNo, "Eliminar dados?")
+
+        If (valor = vbYes) Then
+            Dim result = Module_BD.Executar_Sql_Command("DELETE FROM alunos WHERE ID_Aluno =" & Val(txt_id.Text))
+
+            If IsNothing(result) Then
+                MsgBox("Nao foi possivel emliminar o ID!", vbCritical + vbOK, "Erro ao eliminar")
+                Exit Sub
+            ElseIf result.RecordsAffected = 1 Then
+                MsgBox("Dados eliminados com sucesso!", vbInformation + vbOK, "Sucesso ao eliminar")
+                Me.Controls.Clear()
+                InitializeComponent()
+            End If
+        End If
+    End Sub
 End Class
