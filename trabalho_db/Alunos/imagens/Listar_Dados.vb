@@ -25,4 +25,9 @@ Public Class Listar_Dados
         txt_morada.Text = DataGridView1.Item("Morada", valor).Value
         pic_imagem.ImageLocation = src & DataGridView1.Item("Imagem", valor).Value
     End Sub
+
+    Private Sub btn_adicionar_Click(sender As Object, e As EventArgs) Handles btn_adicionar.Click
+        Inserir_aluno.Show()
+        Me.Hide()
+    End Sub
 End Class

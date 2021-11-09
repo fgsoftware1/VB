@@ -31,6 +31,9 @@ Partial Class Listar_Dados
         Me.lbl_morada = New System.Windows.Forms.Label()
         Me.btn_carregar = New System.Windows.Forms.Button()
         Me.pic_imagem = New System.Windows.Forms.PictureBox()
+        Me.btn_alterar = New System.Windows.Forms.Button()
+        Me.btn_eliminar = New System.Windows.Forms.Button()
+        Me.btn_adicionar = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pic_imagem, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -108,11 +111,41 @@ Partial Class Listar_Dados
         Me.pic_imagem.TabIndex = 8
         Me.pic_imagem.TabStop = False
         '
+        'btn_alterar
+        '
+        Me.btn_alterar.Location = New System.Drawing.Point(116, 406)
+        Me.btn_alterar.Name = "btn_alterar"
+        Me.btn_alterar.Size = New System.Drawing.Size(169, 23)
+        Me.btn_alterar.TabIndex = 9
+        Me.btn_alterar.Text = "alterar"
+        Me.btn_alterar.UseVisualStyleBackColor = True
+        '
+        'btn_eliminar
+        '
+        Me.btn_eliminar.Location = New System.Drawing.Point(334, 406)
+        Me.btn_eliminar.Name = "btn_eliminar"
+        Me.btn_eliminar.Size = New System.Drawing.Size(169, 23)
+        Me.btn_eliminar.TabIndex = 10
+        Me.btn_eliminar.Text = "eliminar"
+        Me.btn_eliminar.UseVisualStyleBackColor = True
+        '
+        'btn_adicionar
+        '
+        Me.btn_adicionar.Location = New System.Drawing.Point(448, 301)
+        Me.btn_adicionar.Name = "btn_adicionar"
+        Me.btn_adicionar.Size = New System.Drawing.Size(75, 23)
+        Me.btn_adicionar.TabIndex = 11
+        Me.btn_adicionar.Text = "adicionar"
+        Me.btn_adicionar.UseVisualStyleBackColor = True
+        '
         'Listar_Dados
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(702, 450)
+        Me.Controls.Add(Me.btn_adicionar)
+        Me.Controls.Add(Me.btn_eliminar)
+        Me.Controls.Add(Me.btn_alterar)
         Me.Controls.Add(Me.pic_imagem)
         Me.Controls.Add(Me.btn_carregar)
         Me.Controls.Add(Me.txt_morada)
@@ -140,4 +173,7 @@ Partial Class Listar_Dados
     Friend WithEvents lbl_morada As Label
     Friend WithEvents btn_carregar As Button
     Friend WithEvents pic_imagem As PictureBox
+    Friend WithEvents btn_alterar As Button
+    Friend WithEvents btn_eliminar As Button
+    Friend WithEvents btn_adicionar As Button
 End Class
