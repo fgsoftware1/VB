@@ -117,6 +117,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Alunos\Alterar_aluno.Designer.vb">
+      <DependentUpon>Alterar_aluno.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Alunos\Alterar_aluno.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Alunos\imagens\Listar_Dados.Designer.vb">
       <DependentUpon>Listar_Dados.vb</DependentUpon>
     </Compile>
@@ -156,6 +162,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Alunos\Alterar_aluno.resx">
+      <DependentUpon>Alterar_aluno.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Alunos\imagens\Listar_Dados.resx">
       <DependentUpon>Listar_Dados.vb</DependentUpon>
     </EmbeddedResource>
