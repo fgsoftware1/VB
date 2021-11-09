@@ -28,6 +28,6 @@ Public Class Listar_Dados
 
     Private Sub btn_adicionar_Click(sender As Object, e As EventArgs) Handles btn_adicionar.Click
         Inserir_aluno.Show()
-        Me.Hide()
+        'Me.Hide()
     End Sub
 End Class
