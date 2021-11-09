@@ -1,6 +1,9 @@
 ﻿Imports System.IO
 
 Public Class Alterar_aluno
+    Dim imageUpload As Image
+    Dim imageFilename As String
+
     Private Sub Alterar_aluno_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim valor_ID = Module_BD.ID
         Dim result = Module_BD.Executar_Sql_Command("SELECT * FROM alunos " & " WHERE ID_Aluno = " & valor_ID)
@@ -26,5 +29,26 @@ Public Class Alterar_aluno
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
+    End Sub
+
+    Private Sub btn_alterar_Click(sender As Object, e As EventArgs) Handles btn_alterar.Click
+
+    End Sub
+
+    Private Sub pic_imagem_Click(sender As Object, e As EventArgs) Handles pic_imagem.Click
+        Dim openFileDialog1 As New OpenFileDialog
+
+        With openFileDialog1
+            .CheckFileExists = True
+            .ShowReadOnly = False
+            .Filter = "All Files|*.*|Bitmap Files (*)|*.bmp; *.gif; *.jpg"
+
+            If .ShowDialog = DialogResult.OK Then
+                pic_imagem.Image = Image.FromFile(.FileName)
+
+                imageFilename = openFileDialog1.FileName
+                imageUpload = Image.FromFile(openFileDialog1.FileName)
+            End If
+        End With
     End Sub
 End Class
