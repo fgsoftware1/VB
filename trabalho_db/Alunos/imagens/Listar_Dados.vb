@@ -34,7 +34,7 @@ Public Class Listar_Dados
     Private Sub btn_alterar_Click(sender As Object, e As EventArgs) Handles btn_alterar.Click
         If txt_id.Text <> "" Then
             Module_BD.ID = txt_id.Text
-
+            Alterar_aluno.Show()
         End If
     End Sub
 
