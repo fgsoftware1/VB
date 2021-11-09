@@ -32,7 +32,46 @@ Public Class Alterar_aluno
     End Sub
 
     Private Sub btn_alterar_Click(sender As Object, e As EventArgs) Handles btn_alterar.Click
+        If Validacoes_BD.Valida_Numeros(txt_contato.Text, "Contato") = -1 Then
+            txt_contato.Text = ""
+            Exit Sub
+        End If
 
+        If IsNothing(pic_imagem.Image) Then
+            MsgBox("nao tem imagem")
+            Exit Sub
+        End If
+
+        Dim ativo = IIf(cmb_ativo.Text = "Sim", 1, 0)
+        Dim nome_ficheiro = System.IO.Path.GetFileName(imageFilename)
+        Dim extensao_ficheiro = System.IO.Path.GetExtension(imageFilename)
+        Dim src = AppDomain.CurrentDomain.BaseDirectory
+
+        src = Directory.GetParent(src).Parent.Parent.FullName & "\imagens\"
+
+        If File.Exists(src & nome_ficheiro) Then
+            MsgBox("já existe a imagem")
+            pic_imagem.Image = Nothing
+            Exit Sub
+        Else
+            File.Copy(imageFilename, src & nome_ficheiro)
+        End If
+
+        Try
+            Dim result = Module_BD.Executar_Sql_Command("UPDATE alunos " &
+                                                    "SET Nome = '" & txt_nome.Text & "', Morada = '" & txt_morada.Text & "', Data_Nasc = " &
+                                                    "'" & txt_data.Text & "', Genero = '" & cmb_genero.Text & "', Contato = " &
+                                                    "" & txt_contato.Text & ", Imagem = '" & nome_ficheiro & "', Ativo = " &
+                                                    "" & ativo & " ")
+            If IsNothing(result) Then
+                File.Delete(src & nome_ficheiro)
+                MsgBox("Erro na inserçao dos dados")
+            ElseIf result.RecordsAffected = 1 Then
+                MsgBox("dados inseridos")
+            End If
+        Catch ex As MySql.Data.MySqlClient.MySqlException
+            MessageBox.Show(ex.Message)
+        End Try
     End Sub
 
     Private Sub pic_imagem_Click(sender As Object, e As EventArgs) Handles pic_imagem.Click
