@@ -1,6 +1,7 @@
 ﻿Imports MySql.Data.MySqlClient
 
 Module Module_BD
+    Public ID As Integer
     Public myConnectionString As New MySqlConnection("server=localhost; uid=root; " &
                                                      "pwd=; database=trabalho_bd; SslMode=none")
 
