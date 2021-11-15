@@ -3,9 +3,10 @@
 Public Class Alterar_aluno
     Dim imageUpload As Image
     Dim imageFilename As String
+    Dim valor_ID = Module_BD.ID
+    Dim localizacao As String
 
     Private Sub Alterar_aluno_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim valor_ID = Module_BD.ID
         Dim result = Module_BD.Executar_Sql_Command("SELECT * FROM alunos " & " WHERE ID_Aluno = " & valor_ID)
         Dim src = AppDomain.CurrentDomain.BaseDirectory
 
@@ -21,6 +22,7 @@ Public Class Alterar_aluno
                 txt_contato.Text = result("Contato").ToString()
                 cmb_ativo.SelectedItem = IIf(result("Ativo") = 1, "Sim", "Nao")
                 pic_imagem.ImageLocation = src & result("Imagem").ToString
+                localizacao = result("Imagem").ToString
 
                 result.Close()
             Else
@@ -54,15 +56,17 @@ Public Class Alterar_aluno
             pic_imagem.Image = Nothing
             Exit Sub
         Else
-            File.Copy(imageFilename, src & nome_ficheiro)
+            If localizacao <> nome_ficheiro Then
+                File.Copy(imageFilename, src & nome_ficheiro)
+            End If
         End If
 
-        Try
+            Try
             Dim result = Module_BD.Executar_Sql_Command("UPDATE alunos " &
                                                     "SET Nome = '" & txt_nome.Text & "', Morada = '" & txt_morada.Text & "', Data_Nasc = " &
                                                     "'" & txt_data.Text & "', Genero = '" & cmb_genero.Text & "', Contato = " &
                                                     "" & txt_contato.Text & ", Imagem = '" & nome_ficheiro & "', Ativo = " &
-                                                    "" & ativo & " ")
+                                                    "" & ativo & " WHERE ID_Aluno = " & valor_ID & "")
             If IsNothing(result) Then
                 File.Delete(src & nome_ficheiro)
                 MsgBox("Erro na inserçao dos dados")
