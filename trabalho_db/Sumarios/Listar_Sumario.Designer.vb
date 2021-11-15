@@ -25,10 +25,7 @@ Partial Class txt_data
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.lbl_id = New System.Windows.Forms.Label()
         Me.txt_id = New System.Windows.Forms.TextBox()
-        Me.txt_titulo = New System.Windows.Forms.TextBox()
         Me.txt_descricao = New System.Windows.Forms.TextBox()
-        Me.txt_nome = New System.Windows.Forms.TextBox()
-        Me.lbl_nome = New System.Windows.Forms.Label()
         Me.txt_date = New System.Windows.Forms.TextBox()
         Me.lbl_data = New System.Windows.Forms.Label()
         Me.txt_disciplina = New System.Windows.Forms.TextBox()
@@ -36,15 +33,16 @@ Partial Class txt_data
         Me.btn_inserir = New System.Windows.Forms.Button()
         Me.btn_alterar = New System.Windows.Forms.Button()
         Me.btn_eliminar = New System.Windows.Forms.Button()
+        Me.btn_atualizar = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(24, 23)
+        Me.DataGridView1.Location = New System.Drawing.Point(24, 42)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(447, 280)
+        Me.DataGridView1.Size = New System.Drawing.Size(447, 261)
         Me.DataGridView1.TabIndex = 0
         '
         'lbl_id
@@ -63,36 +61,13 @@ Partial Class txt_data
         Me.txt_id.Size = New System.Drawing.Size(140, 20)
         Me.txt_id.TabIndex = 2
         '
-        'txt_titulo
-        '
-        Me.txt_titulo.Location = New System.Drawing.Point(498, 23)
-        Me.txt_titulo.Name = "txt_titulo"
-        Me.txt_titulo.Size = New System.Drawing.Size(290, 20)
-        Me.txt_titulo.TabIndex = 3
-        '
         'txt_descricao
         '
-        Me.txt_descricao.Location = New System.Drawing.Point(498, 59)
+        Me.txt_descricao.Location = New System.Drawing.Point(498, 42)
         Me.txt_descricao.Multiline = True
         Me.txt_descricao.Name = "txt_descricao"
-        Me.txt_descricao.Size = New System.Drawing.Size(290, 320)
+        Me.txt_descricao.Size = New System.Drawing.Size(290, 337)
         Me.txt_descricao.TabIndex = 4
-        '
-        'txt_nome
-        '
-        Me.txt_nome.Location = New System.Drawing.Point(48, 359)
-        Me.txt_nome.Name = "txt_nome"
-        Me.txt_nome.Size = New System.Drawing.Size(140, 20)
-        Me.txt_nome.TabIndex = 6
-        '
-        'lbl_nome
-        '
-        Me.lbl_nome.AutoSize = True
-        Me.lbl_nome.Location = New System.Drawing.Point(12, 363)
-        Me.lbl_nome.Name = "lbl_nome"
-        Me.lbl_nome.Size = New System.Drawing.Size(33, 13)
-        Me.lbl_nome.TabIndex = 5
-        Me.lbl_nome.Text = "nome"
         '
         'txt_date
         '
@@ -112,7 +87,7 @@ Partial Class txt_data
         '
         'txt_disciplina
         '
-        Me.txt_disciplina.Location = New System.Drawing.Point(322, 356)
+        Me.txt_disciplina.Location = New System.Drawing.Point(61, 359)
         Me.txt_disciplina.Name = "txt_disciplina"
         Me.txt_disciplina.Size = New System.Drawing.Size(149, 20)
         Me.txt_disciplina.TabIndex = 10
@@ -120,7 +95,7 @@ Partial Class txt_data
         'lbl_disciplina
         '
         Me.lbl_disciplina.AutoSize = True
-        Me.lbl_disciplina.Location = New System.Drawing.Point(266, 359)
+        Me.lbl_disciplina.Location = New System.Drawing.Point(5, 362)
         Me.lbl_disciplina.Name = "lbl_disciplina"
         Me.lbl_disciplina.Size = New System.Drawing.Size(50, 13)
         Me.lbl_disciplina.TabIndex = 9
@@ -153,11 +128,21 @@ Partial Class txt_data
         Me.btn_eliminar.Text = "eliminar"
         Me.btn_eliminar.UseVisualStyleBackColor = True
         '
+        'btn_atualizar
+        '
+        Me.btn_atualizar.Location = New System.Drawing.Point(116, 12)
+        Me.btn_atualizar.Name = "btn_atualizar"
+        Me.btn_atualizar.Size = New System.Drawing.Size(266, 23)
+        Me.btn_atualizar.TabIndex = 14
+        Me.btn_atualizar.Text = "atualizar"
+        Me.btn_atualizar.UseVisualStyleBackColor = True
+        '
         'txt_data
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.btn_atualizar)
         Me.Controls.Add(Me.btn_eliminar)
         Me.Controls.Add(Me.btn_alterar)
         Me.Controls.Add(Me.btn_inserir)
@@ -165,10 +150,7 @@ Partial Class txt_data
         Me.Controls.Add(Me.lbl_disciplina)
         Me.Controls.Add(Me.txt_date)
         Me.Controls.Add(Me.lbl_data)
-        Me.Controls.Add(Me.txt_nome)
-        Me.Controls.Add(Me.lbl_nome)
         Me.Controls.Add(Me.txt_descricao)
-        Me.Controls.Add(Me.txt_titulo)
         Me.Controls.Add(Me.txt_id)
         Me.Controls.Add(Me.lbl_id)
         Me.Controls.Add(Me.DataGridView1)
@@ -183,10 +165,7 @@ Partial Class txt_data
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents lbl_id As Label
     Friend WithEvents txt_id As TextBox
-    Friend WithEvents txt_titulo As TextBox
     Friend WithEvents txt_descricao As TextBox
-    Friend WithEvents txt_nome As TextBox
-    Friend WithEvents lbl_nome As Label
     Friend WithEvents txt_date As TextBox
     Friend WithEvents lbl_data As Label
     Friend WithEvents txt_disciplina As TextBox
@@ -194,4 +173,5 @@ Partial Class txt_data
     Friend WithEvents btn_inserir As Button
     Friend WithEvents btn_alterar As Button
     Friend WithEvents btn_eliminar As Button
+    Friend WithEvents btn_atualizar As Button
 End Class

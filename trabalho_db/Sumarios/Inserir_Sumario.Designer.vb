@@ -23,7 +23,6 @@ Partial Class Inserir_Sumario
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.lbl_title = New System.Windows.Forms.Label()
-        Me.txt_title = New System.Windows.Forms.TextBox()
         Me.txt_summary = New System.Windows.Forms.TextBox()
         Me.txt_Data = New System.Windows.Forms.TextBox()
         Me.cmb_disciplina = New System.Windows.Forms.ComboBox()
@@ -43,19 +42,12 @@ Partial Class Inserir_Sumario
         Me.lbl_title.TabIndex = 0
         Me.lbl_title.Text = "inserir sumário"
         '
-        'txt_title
-        '
-        Me.txt_title.Location = New System.Drawing.Point(12, 56)
-        Me.txt_title.Name = "txt_title"
-        Me.txt_title.Size = New System.Drawing.Size(527, 20)
-        Me.txt_title.TabIndex = 1
-        '
         'txt_summary
         '
-        Me.txt_summary.Location = New System.Drawing.Point(12, 83)
+        Me.txt_summary.Location = New System.Drawing.Point(12, 56)
         Me.txt_summary.Multiline = True
         Me.txt_summary.Name = "txt_summary"
-        Me.txt_summary.Size = New System.Drawing.Size(527, 355)
+        Me.txt_summary.Size = New System.Drawing.Size(527, 382)
         Me.txt_summary.TabIndex = 2
         '
         'txt_Data
@@ -130,7 +122,6 @@ Partial Class Inserir_Sumario
         Me.Controls.Add(Me.cmb_disciplina)
         Me.Controls.Add(Me.txt_Data)
         Me.Controls.Add(Me.txt_summary)
-        Me.Controls.Add(Me.txt_title)
         Me.Controls.Add(Me.lbl_title)
         Me.Name = "Inserir_Sumario"
         Me.Text = "Inserir_Sumario"
@@ -140,7 +131,6 @@ Partial Class Inserir_Sumario
     End Sub
 
     Friend WithEvents lbl_title As Label
-    Friend WithEvents txt_title As TextBox
     Friend WithEvents txt_summary As TextBox
     Friend WithEvents txt_Data As TextBox
     Friend WithEvents cmb_disciplina As ComboBox

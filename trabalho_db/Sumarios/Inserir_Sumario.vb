@@ -15,8 +15,8 @@ Public Class Inserir_Sumario
 
         Try
             Dim result = Module_BD.Executar_Sql_Command("INSERT INTO " &
-                                                    "sumarios (Nome_Sumario, Data_Sumario, Descricao, Disciplina, Descricao, Ativo) " &
-                                                    "VALUES ('" & txt_title.Text & "', '" & txt_Data.Text & "', " &
+                                                    "sumarios (Data_Sumario, Descricao, Disciplina, Ativo) " &
+                                                    "VALUES ('" & txt_Data.Text & "', " &
                                                     "'" & txt_summary.Text & "', '" & cmb_disciplina.Text & "', " & "" & ativo & ") ")
             If IsNothing(result) Then
                 MsgBox("Erro na inserçao dos dados")

@@ -24,7 +24,6 @@ Partial Class Alterar_Sumario
     Private Sub InitializeComponent()
         Me.btn_Alterar = New System.Windows.Forms.Button()
         Me.txt_summary = New System.Windows.Forms.TextBox()
-        Me.txt_title = New System.Windows.Forms.TextBox()
         Me.lbl_title = New System.Windows.Forms.Label()
         Me.lbl_disciplina = New System.Windows.Forms.Label()
         Me.lbl_Ativo = New System.Windows.Forms.Label()
@@ -47,18 +46,11 @@ Partial Class Alterar_Sumario
         '
         'txt_summary
         '
-        Me.txt_summary.Location = New System.Drawing.Point(12, 77)
+        Me.txt_summary.Location = New System.Drawing.Point(12, 35)
         Me.txt_summary.Multiline = True
         Me.txt_summary.Name = "txt_summary"
-        Me.txt_summary.Size = New System.Drawing.Size(527, 355)
+        Me.txt_summary.Size = New System.Drawing.Size(527, 397)
         Me.txt_summary.TabIndex = 9
-        '
-        'txt_title
-        '
-        Me.txt_title.Location = New System.Drawing.Point(12, 50)
-        Me.txt_title.Name = "txt_title"
-        Me.txt_title.Size = New System.Drawing.Size(527, 20)
-        Me.txt_title.TabIndex = 8
         '
         'lbl_title
         '
@@ -151,7 +143,6 @@ Partial Class Alterar_Sumario
         Me.Controls.Add(Me.txt_Data)
         Me.Controls.Add(Me.btn_Alterar)
         Me.Controls.Add(Me.txt_summary)
-        Me.Controls.Add(Me.txt_title)
         Me.Controls.Add(Me.lbl_title)
         Me.Name = "Alterar_Sumario"
         Me.Text = "Alterar_Sumario"
@@ -162,7 +153,6 @@ Partial Class Alterar_Sumario
 
     Friend WithEvents btn_Alterar As Button
     Friend WithEvents txt_summary As TextBox
-    Friend WithEvents txt_title As TextBox
     Friend WithEvents lbl_title As Label
     Friend WithEvents lbl_disciplina As Label
     Friend WithEvents lbl_Ativo As Label
