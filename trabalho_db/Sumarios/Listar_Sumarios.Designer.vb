@@ -23,16 +23,16 @@ Partial Class txt_data
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.lbl_id = New System.Windows.Forms.Label()
         Me.txt_id = New System.Windows.Forms.TextBox()
         Me.txt_titulo = New System.Windows.Forms.TextBox()
         Me.txt_descricao = New System.Windows.Forms.TextBox()
         Me.txt_nome = New System.Windows.Forms.TextBox()
         Me.lbl_nome = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
+        Me.txt_date = New System.Windows.Forms.TextBox()
+        Me.lbl_data = New System.Windows.Forms.Label()
         Me.txt_disciplina = New System.Windows.Forms.TextBox()
-        Me.Label4 = New System.Windows.Forms.Label()
+        Me.lbl_disciplina = New System.Windows.Forms.Label()
         Me.btn_inserir = New System.Windows.Forms.Button()
         Me.btn_alterar = New System.Windows.Forms.Button()
         Me.btn_eliminar = New System.Windows.Forms.Button()
@@ -47,14 +47,14 @@ Partial Class txt_data
         Me.DataGridView1.Size = New System.Drawing.Size(447, 280)
         Me.DataGridView1.TabIndex = 0
         '
-        'Label1
+        'lbl_id
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(24, 325)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(18, 13)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "ID"
+        Me.lbl_id.AutoSize = True
+        Me.lbl_id.Location = New System.Drawing.Point(24, 325)
+        Me.lbl_id.Name = "lbl_id"
+        Me.lbl_id.Size = New System.Drawing.Size(18, 13)
+        Me.lbl_id.TabIndex = 1
+        Me.lbl_id.Text = "ID"
         '
         'txt_id
         '
@@ -94,21 +94,21 @@ Partial Class txt_data
         Me.lbl_nome.TabIndex = 5
         Me.lbl_nome.Text = "nome"
         '
-        'TextBox2
+        'txt_date
         '
-        Me.TextBox2.Location = New System.Drawing.Point(322, 325)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(149, 20)
-        Me.TextBox2.TabIndex = 8
+        Me.txt_date.Location = New System.Drawing.Point(322, 325)
+        Me.txt_date.Name = "txt_date"
+        Me.txt_date.Size = New System.Drawing.Size(149, 20)
+        Me.txt_date.TabIndex = 8
         '
-        'Label3
+        'lbl_data
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(288, 328)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(28, 13)
-        Me.Label3.TabIndex = 7
-        Me.Label3.Text = "data"
+        Me.lbl_data.AutoSize = True
+        Me.lbl_data.Location = New System.Drawing.Point(288, 328)
+        Me.lbl_data.Name = "lbl_data"
+        Me.lbl_data.Size = New System.Drawing.Size(28, 13)
+        Me.lbl_data.TabIndex = 7
+        Me.lbl_data.Text = "data"
         '
         'txt_disciplina
         '
@@ -117,14 +117,14 @@ Partial Class txt_data
         Me.txt_disciplina.Size = New System.Drawing.Size(149, 20)
         Me.txt_disciplina.TabIndex = 10
         '
-        'Label4
+        'lbl_disciplina
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(266, 359)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(50, 13)
-        Me.Label4.TabIndex = 9
-        Me.Label4.Text = "disciplina"
+        Me.lbl_disciplina.AutoSize = True
+        Me.lbl_disciplina.Location = New System.Drawing.Point(266, 359)
+        Me.lbl_disciplina.Name = "lbl_disciplina"
+        Me.lbl_disciplina.Size = New System.Drawing.Size(50, 13)
+        Me.lbl_disciplina.TabIndex = 9
+        Me.lbl_disciplina.Text = "disciplina"
         '
         'btn_inserir
         '
@@ -162,15 +162,15 @@ Partial Class txt_data
         Me.Controls.Add(Me.btn_alterar)
         Me.Controls.Add(Me.btn_inserir)
         Me.Controls.Add(Me.txt_disciplina)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.lbl_disciplina)
+        Me.Controls.Add(Me.txt_date)
+        Me.Controls.Add(Me.lbl_data)
         Me.Controls.Add(Me.txt_nome)
         Me.Controls.Add(Me.lbl_nome)
         Me.Controls.Add(Me.txt_descricao)
         Me.Controls.Add(Me.txt_titulo)
         Me.Controls.Add(Me.txt_id)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.lbl_id)
         Me.Controls.Add(Me.DataGridView1)
         Me.Name = "txt_data"
         Me.Text = "Listar_Sumarios"
@@ -181,16 +181,16 @@ Partial Class txt_data
     End Sub
 
     Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents Label1 As Label
+    Friend WithEvents lbl_id As Label
     Friend WithEvents txt_id As TextBox
     Friend WithEvents txt_titulo As TextBox
     Friend WithEvents txt_descricao As TextBox
     Friend WithEvents txt_nome As TextBox
     Friend WithEvents lbl_nome As Label
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents Label3 As Label
+    Friend WithEvents txt_date As TextBox
+    Friend WithEvents lbl_data As Label
     Friend WithEvents txt_disciplina As TextBox
-    Friend WithEvents Label4 As Label
+    Friend WithEvents lbl_disciplina As Label
     Friend WithEvents btn_inserir As Button
     Friend WithEvents btn_alterar As Button
     Friend WithEvents btn_eliminar As Button

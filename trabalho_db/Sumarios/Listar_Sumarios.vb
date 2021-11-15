@@ -19,7 +19,7 @@ Public Class txt_data
 
         txt_id.Text = DataGridView1.Item("ID_Sumario", valor).Value
         txt_nome.Text = DataGridView1.Item("Nome_Sumario", valor).Value
-        txt_data.Text = DataGridView1.Item("Data_Sumario", valor).Value
+        txt_date = DataGridView1.Item("Data_Sumario", valor).Value
         txt_titulo.Text = DataGridView1.Item("Nome_Sumario", valor).Value
         txt_descricao.Text = DataGridView1.Item("Descricao_Sumario", valor).Value
     End Sub

@@ -34,7 +34,7 @@ Public Class Inserir_aluno
             Dim result = Module_BD.Executar_Sql_Command("INSERT INTO " &
                                                     "alunos (Nome, Morada, Data_Nasc, Genero, Contato, Imagem, Ativo) " &
                                                     "VALUES ('" & txt_nome.Text & "', '" & txt_morada.Text & "', " &
-                                                    "'" & txt_data.Text & "', '" & cmb_genero.Text & "', " &
+                                                    "'" & txt_Data.Text & "', '" & cmb_genero.Text & "', " &
                                                     "" & txt_contato.Text & ", '" & nome_ficheiro & "', " &
                                                     "" & ativo & ") ")
             If IsNothing(result) Then
@@ -63,9 +63,5 @@ Public Class Inserir_aluno
                 imageUpload = Image.FromFile(openFileDialog1.FileName)
             End If
         End With
-    End Sub
-
-    Private Sub btn_cancelar_Click(sender As Object, e As EventArgs) Handles btn_cancelar.Click
-
     End Sub
 End Class

@@ -28,7 +28,7 @@ Partial Class Inserir_aluno
         Me.cmb_genero = New System.Windows.Forms.ComboBox()
         Me.lbl_morada = New System.Windows.Forms.Label()
         Me.txt_morada = New System.Windows.Forms.TextBox()
-        Me.txt_data = New System.Windows.Forms.TextBox()
+        Me.txt_Data = New System.Windows.Forms.TextBox()
         Me.lbl_genero = New System.Windows.Forms.Label()
         Me.cmb_ativo = New System.Windows.Forms.ComboBox()
         Me.lbl_ativo = New System.Windows.Forms.Label()
@@ -92,12 +92,12 @@ Partial Class Inserir_aluno
         Me.txt_morada.Size = New System.Drawing.Size(362, 20)
         Me.txt_morada.TabIndex = 5
         '
-        'txt_data
+        'txt_Data
         '
-        Me.txt_data.Location = New System.Drawing.Point(192, 157)
-        Me.txt_data.Name = "txt_data"
-        Me.txt_data.Size = New System.Drawing.Size(115, 20)
-        Me.txt_data.TabIndex = 6
+        Me.txt_Data.Location = New System.Drawing.Point(192, 157)
+        Me.txt_Data.Name = "txt_Data"
+        Me.txt_Data.Size = New System.Drawing.Size(115, 20)
+        Me.txt_Data.TabIndex = 6
         '
         'lbl_genero
         '
@@ -202,7 +202,7 @@ Partial Class Inserir_aluno
         Me.Controls.Add(Me.lbl_ativo)
         Me.Controls.Add(Me.cmb_ativo)
         Me.Controls.Add(Me.lbl_genero)
-        Me.Controls.Add(Me.txt_data)
+        Me.Controls.Add(Me.txt_Data)
         Me.Controls.Add(Me.txt_morada)
         Me.Controls.Add(Me.lbl_morada)
         Me.Controls.Add(Me.cmb_genero)
@@ -223,7 +223,7 @@ Partial Class Inserir_aluno
     Friend WithEvents cmb_genero As ComboBox
     Friend WithEvents lbl_morada As Label
     Friend WithEvents txt_morada As TextBox
-    Friend WithEvents txt_data As TextBox
+    Friend WithEvents txt_Data As TextBox
     Friend WithEvents lbl_genero As Label
     Friend WithEvents cmb_ativo As ComboBox
     Friend WithEvents lbl_ativo As Label
