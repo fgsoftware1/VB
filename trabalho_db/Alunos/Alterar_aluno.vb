@@ -56,7 +56,7 @@ Public Class Alterar_aluno
             pic_imagem.Image = Nothing
             Exit Sub
         Else
-            If IsNothing(nome_ficheiro) ==  Then
+            If IsNothing(nome_ficheiro) Then
                 File.Copy(imageFilename, src & nome_ficheiro)
             End If
         End If
@@ -65,13 +65,13 @@ Public Class Alterar_aluno
             Dim result = Module_BD.Executar_Sql_Command("UPDATE alunos " &
                                                     "SET Nome = '" & txt_nome.Text & "', Morada = '" & txt_morada.Text & "', Data_Nasc = " &
                                                     "'" & txt_data.Text & "', Genero = '" & cmb_genero.Text & "', Contato = " &
-                                                    "" & txt_contato.Text & ", Imagem = '" & nome_ficheiro & "', Ativo = " &
+                                                    "" & txt_contato.Text & ", Imagem = '" & IIf(IsNothing(nome_ficheiro), localizacao, nome_ficheiro) & "', Ativo = " &
                                                     "" & ativo & " WHERE ID_Aluno = " & valor_ID & "")
             If IsNothing(result) Then
                 File.Delete(src & nome_ficheiro)
-                MsgBox("Erro na inserçao dos dados")
+                MsgBox("Erro na alteraçao dos dados")
             ElseIf result.RecordsAffected = 1 Then
-                MsgBox("dados inseridos")
+                MsgBox("dados alterados")
             End If
         Catch ex As MySql.Data.MySqlClient.MySqlException
             MessageBox.Show(ex.Message)
