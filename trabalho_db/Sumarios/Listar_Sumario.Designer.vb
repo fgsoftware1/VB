@@ -26,8 +26,6 @@ Partial Class txt_data
         Me.lbl_id = New System.Windows.Forms.Label()
         Me.txt_id = New System.Windows.Forms.TextBox()
         Me.txt_descricao = New System.Windows.Forms.TextBox()
-        Me.txt_date = New System.Windows.Forms.TextBox()
-        Me.lbl_data = New System.Windows.Forms.Label()
         Me.txt_disciplina = New System.Windows.Forms.TextBox()
         Me.lbl_disciplina = New System.Windows.Forms.Label()
         Me.btn_inserir = New System.Windows.Forms.Button()
@@ -69,25 +67,9 @@ Partial Class txt_data
         Me.txt_descricao.Size = New System.Drawing.Size(290, 337)
         Me.txt_descricao.TabIndex = 4
         '
-        'txt_date
-        '
-        Me.txt_date.Location = New System.Drawing.Point(322, 325)
-        Me.txt_date.Name = "txt_date"
-        Me.txt_date.Size = New System.Drawing.Size(149, 20)
-        Me.txt_date.TabIndex = 8
-        '
-        'lbl_data
-        '
-        Me.lbl_data.AutoSize = True
-        Me.lbl_data.Location = New System.Drawing.Point(288, 328)
-        Me.lbl_data.Name = "lbl_data"
-        Me.lbl_data.Size = New System.Drawing.Size(28, 13)
-        Me.lbl_data.TabIndex = 7
-        Me.lbl_data.Text = "data"
-        '
         'txt_disciplina
         '
-        Me.txt_disciplina.Location = New System.Drawing.Point(61, 359)
+        Me.txt_disciplina.Location = New System.Drawing.Point(300, 325)
         Me.txt_disciplina.Name = "txt_disciplina"
         Me.txt_disciplina.Size = New System.Drawing.Size(149, 20)
         Me.txt_disciplina.TabIndex = 10
@@ -95,7 +77,7 @@ Partial Class txt_data
         'lbl_disciplina
         '
         Me.lbl_disciplina.AutoSize = True
-        Me.lbl_disciplina.Location = New System.Drawing.Point(5, 362)
+        Me.lbl_disciplina.Location = New System.Drawing.Point(244, 328)
         Me.lbl_disciplina.Name = "lbl_disciplina"
         Me.lbl_disciplina.Size = New System.Drawing.Size(50, 13)
         Me.lbl_disciplina.TabIndex = 9
@@ -103,27 +85,27 @@ Partial Class txt_data
         '
         'btn_inserir
         '
-        Me.btn_inserir.Location = New System.Drawing.Point(15, 409)
+        Me.btn_inserir.Location = New System.Drawing.Point(15, 389)
         Me.btn_inserir.Name = "btn_inserir"
-        Me.btn_inserir.Size = New System.Drawing.Size(147, 23)
+        Me.btn_inserir.Size = New System.Drawing.Size(147, 43)
         Me.btn_inserir.TabIndex = 11
         Me.btn_inserir.Text = "inserir"
         Me.btn_inserir.UseVisualStyleBackColor = True
         '
         'btn_alterar
         '
-        Me.btn_alterar.Location = New System.Drawing.Point(180, 409)
+        Me.btn_alterar.Location = New System.Drawing.Point(180, 389)
         Me.btn_alterar.Name = "btn_alterar"
-        Me.btn_alterar.Size = New System.Drawing.Size(136, 23)
+        Me.btn_alterar.Size = New System.Drawing.Size(136, 43)
         Me.btn_alterar.TabIndex = 12
         Me.btn_alterar.Text = "alterar"
         Me.btn_alterar.UseVisualStyleBackColor = True
         '
         'btn_eliminar
         '
-        Me.btn_eliminar.Location = New System.Drawing.Point(346, 409)
+        Me.btn_eliminar.Location = New System.Drawing.Point(346, 389)
         Me.btn_eliminar.Name = "btn_eliminar"
-        Me.btn_eliminar.Size = New System.Drawing.Size(125, 23)
+        Me.btn_eliminar.Size = New System.Drawing.Size(125, 43)
         Me.btn_eliminar.TabIndex = 13
         Me.btn_eliminar.Text = "eliminar"
         Me.btn_eliminar.UseVisualStyleBackColor = True
@@ -148,8 +130,6 @@ Partial Class txt_data
         Me.Controls.Add(Me.btn_inserir)
         Me.Controls.Add(Me.txt_disciplina)
         Me.Controls.Add(Me.lbl_disciplina)
-        Me.Controls.Add(Me.txt_date)
-        Me.Controls.Add(Me.lbl_data)
         Me.Controls.Add(Me.txt_descricao)
         Me.Controls.Add(Me.txt_id)
         Me.Controls.Add(Me.lbl_id)
@@ -166,8 +146,6 @@ Partial Class txt_data
     Friend WithEvents lbl_id As Label
     Friend WithEvents txt_id As TextBox
     Friend WithEvents txt_descricao As TextBox
-    Friend WithEvents txt_date As TextBox
-    Friend WithEvents lbl_data As Label
     Friend WithEvents txt_disciplina As TextBox
     Friend WithEvents lbl_disciplina As Label
     Friend WithEvents btn_inserir As Button
