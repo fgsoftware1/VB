@@ -56,7 +56,7 @@ Public Class Alterar_aluno
             pic_imagem.Image = Nothing
             Exit Sub
         Else
-            If IsNothing(nome_ficheiro) Then
+            If Not IsNothing(nome_ficheiro) Then
                 File.Copy(imageFilename, src & nome_ficheiro)
             End If
         End If
