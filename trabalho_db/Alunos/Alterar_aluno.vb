@@ -61,7 +61,7 @@ Public Class Alterar_aluno
             End If
         End If
 
-            Try
+        Try
             Dim result = Module_BD.Executar_Sql_Command("UPDATE alunos " &
                                                     "SET Nome = '" & txt_nome.Text & "', Morada = '" & txt_morada.Text & "', Data_Nasc = " &
                                                     "'" & txt_data.Text & "', Genero = '" & cmb_genero.Text & "', Contato = " &
