@@ -154,10 +154,10 @@
     <Compile Include="Sumarios\Inserir_Sumario.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Sumarios\Listar_Sumarios.Designer.vb">
-      <DependentUpon>Listar_Sumarios.vb</DependentUpon>
+    <Compile Include="Sumarios\Listar_Sumario.Designer.vb">
+      <DependentUpon>Listar_Sumario.vb</DependentUpon>
     </Compile>
-    <Compile Include="Sumarios\Listar_Sumarios.vb">
+    <Compile Include="Sumarios\Listar_Sumario.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Validacoes_BD.vb" />
@@ -198,11 +198,14 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Sumarios\Alterar_Sumario.resx">
+      <DependentUpon>Alterar_Sumario.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Sumarios\Inserir_Sumario.resx">
       <DependentUpon>Inserir_Sumario.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Sumarios\Listar_Sumarios.resx">
-      <DependentUpon>Listar_Sumarios.vb</DependentUpon>
+    <EmbeddedResource Include="Sumarios\Listar_Sumario.resx">
+      <DependentUpon>Listar_Sumario.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

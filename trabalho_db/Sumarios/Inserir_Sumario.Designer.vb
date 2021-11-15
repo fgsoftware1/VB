@@ -29,6 +29,9 @@ Partial Class Inserir_Sumario
         Me.cmb_disciplina = New System.Windows.Forms.ComboBox()
         Me.cmb_ativo = New System.Windows.Forms.ComboBox()
         Me.btn_Inserir = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.lbl_Ativo = New System.Windows.Forms.Label()
+        Me.lbl_disciplina = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'lbl_title
@@ -65,7 +68,7 @@ Partial Class Inserir_Sumario
         'cmb_disciplina
         '
         Me.cmb_disciplina.FormattingEnabled = True
-        Me.cmb_disciplina.Location = New System.Drawing.Point(546, 128)
+        Me.cmb_disciplina.Location = New System.Drawing.Point(546, 143)
         Me.cmb_disciplina.Name = "cmb_disciplina"
         Me.cmb_disciplina.Size = New System.Drawing.Size(206, 21)
         Me.cmb_disciplina.TabIndex = 4
@@ -73,7 +76,7 @@ Partial Class Inserir_Sumario
         'cmb_ativo
         '
         Me.cmb_ativo.FormattingEnabled = True
-        Me.cmb_ativo.Location = New System.Drawing.Point(546, 82)
+        Me.cmb_ativo.Location = New System.Drawing.Point(546, 101)
         Me.cmb_ativo.Name = "cmb_ativo"
         Me.cmb_ativo.Size = New System.Drawing.Size(206, 21)
         Me.cmb_ativo.TabIndex = 5
@@ -87,11 +90,41 @@ Partial Class Inserir_Sumario
         Me.btn_Inserir.Text = "inserir"
         Me.btn_Inserir.UseVisualStyleBackColor = True
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(644, 37)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(28, 13)
+        Me.Label1.TabIndex = 7
+        Me.Label1.Text = "data"
+        '
+        'lbl_Ativo
+        '
+        Me.lbl_Ativo.AutoSize = True
+        Me.lbl_Ativo.Location = New System.Drawing.Point(644, 79)
+        Me.lbl_Ativo.Name = "lbl_Ativo"
+        Me.lbl_Ativo.Size = New System.Drawing.Size(30, 13)
+        Me.lbl_Ativo.TabIndex = 8
+        Me.lbl_Ativo.Text = "ativo"
+        '
+        'lbl_disciplina
+        '
+        Me.lbl_disciplina.AutoSize = True
+        Me.lbl_disciplina.Location = New System.Drawing.Point(644, 125)
+        Me.lbl_disciplina.Name = "lbl_disciplina"
+        Me.lbl_disciplina.Size = New System.Drawing.Size(50, 13)
+        Me.lbl_disciplina.TabIndex = 9
+        Me.lbl_disciplina.Text = "disciplina"
+        '
         'Inserir_Sumario
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.lbl_disciplina)
+        Me.Controls.Add(Me.lbl_Ativo)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btn_Inserir)
         Me.Controls.Add(Me.cmb_ativo)
         Me.Controls.Add(Me.cmb_disciplina)
@@ -113,4 +146,7 @@ Partial Class Inserir_Sumario
     Friend WithEvents cmb_disciplina As ComboBox
     Friend WithEvents cmb_ativo As ComboBox
     Friend WithEvents btn_Inserir As Button
+    Friend WithEvents Label1 As Label
+    Friend WithEvents lbl_Ativo As Label
+    Friend WithEvents lbl_disciplina As Label
 End Class
