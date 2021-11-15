@@ -22,7 +22,9 @@ Module Module_BD
     End Function
 
     Public Function Executar_Sql_Command(comando As String) As MySqlDataReader
-        myConnectionString.Open()
+        If (myConnectionString.State = ConnectionState.Closed) Then
+            myConnectionString.Open()
+        End If
 
         Try
             Dim query As New MySqlCommand(comando, myConnectionString)
