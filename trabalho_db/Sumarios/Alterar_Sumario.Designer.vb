@@ -55,7 +55,7 @@ Partial Class Alterar_Sumario
         'lbl_title
         '
         Me.lbl_title.AutoSize = True
-        Me.lbl_title.Location = New System.Drawing.Point(385, 19)
+        Me.lbl_title.Location = New System.Drawing.Point(307, 16)
         Me.lbl_title.Name = "lbl_title"
         Me.lbl_title.Size = New System.Drawing.Size(75, 13)
         Me.lbl_title.TabIndex = 7

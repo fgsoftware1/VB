@@ -6,7 +6,7 @@
 
         Try
             If result.Read = True And result.HasRows Then
-                txt_id.Text = result("ID_Aluno").ToString()
+                txt_id.Text = result("ID_Sumario").ToString()
 
                 txt_Data.Text = result("Data_Sumario").ToString()
                 txt_summary.Text = result("Descricao").ToString()
